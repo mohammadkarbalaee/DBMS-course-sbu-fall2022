@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1668163832 "/home/cs-arena/Documents/projects/dbms/exercises/document.tex" "document.pdf" "document" 1668163833
+["pdflatex"] 1668239426 "/home/cs-arena/Documents/projects/dbms/exercises/document.tex" "document.pdf" "document" 1668239426
   "/etc/texmf/web2c/texmf.cnf" 1662739860 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/cs-arena/Documents/projects/dbms/exercises/document.tex" 1668163832 3735 922dd4ff24a4ecb464e88b2ce873a749 ""
+  "/home/cs-arena/Documents/projects/dbms/exercises/document.tex" 1668239425 7836 599dea8365a85e987f805a9cf9863774 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
@@ -33,8 +33,8 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1662739897 4379155 98693266ff65f58d9f98aff394de12d2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1662739922 2798986 799f449af00aa9bfa8be4267ce254d07 ""
-  "document.aux" 1668163833 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "document.tex" 1668163832 3735 922dd4ff24a4ecb464e88b2ce873a749 ""
+  "document.aux" 1668239426 1153 f645b716c314c1cc4719583adcd63ec9 "pdflatex"
+  "document.tex" 1668239425 7836 599dea8365a85e987f805a9cf9863774 ""
   (generated)
   "document.aux"
   "document.log"

@@ -7,42 +7,32 @@
 
 \begin{document}
 	\maketitle
-    \section*{1st Question}
+    \section{Define data. What are the different types of data?}
+    
         Data is every sort of fact about events, people, objects and generally 
-        speaking, raw information is called data. \\
-        There are four types of data.
+        speaking, raw information is called data. Data should be storable \\
+        There are three types of data.
         \begin{itemize}
-            \item Nominal
-            \item Ordinal
-            \item Interval
-            \item Ratio
+            \item Structured 
+            \item Unstructured 
+            \item Semi-structured
         \end{itemize}
-        \textbf{Nominal} 
+        \textbf{Structured}
 
+            Structured data is highly organized and has a model. Structured data is categorized as 
+            quantitative data. SQL is used to manage structured data.\\
+        \textbf{Unstructured}
+        
+            Unstructured data is a sort of data that is not preset by a data model or schema. NoSQL databases
+            are used to manage this category of data. Unstructured data is categorized as qualitative data.\\ 
+        \textbf{Semi-structured}
 
-            Nominal data is a type of data that is used to label variables and 
-            doesn't provide any quantitative information. \\
-            For example; Favorite color of ten people is a nominal data set.
-            Red is no greater than blue or you can't calculate the average 
-            color that people like. Only calculating the mode of this data set is possible. \\
-        \textbf{Ordinal}
+        Semi-structured data is like a bridge between structured data and unstructured data. It's more 
+        complex in comparison to structured data and is easier to store than unstructured data. 
+        Examples of semi-structured data is JSON, CSV and XML.\\ 
 
-        Ordinal data is a type of data that only indicates the order between variables and
-        nothing else. \\ For example; being 3rd in comparison with being 2nd 
-        has a meaning. Calculating the median of ordinal data is possible.\\ 
-        \textbf{Interval}
+    \section{Define database. What are the advantages of using a database system?}
 
-        Interval data is a data type that preserves the ratio between intervals of variables.
-        And absolute zero doesn't have any meaning in this type of data.
-        \\ For example; Temperature is a interval data. \\ 
-        \textbf{Ratio}
-
-        Ratio data is one that has an absolute zero value and every calculation is 
-        possible on ratio data because it not only preserves the ration between intervals 
-        , but also it preserves ratio between values themselves. \\ 
-        For example; 2 is two times 1. Normal numerical data is ratio data. 
-
-    \section*{2nd Question}
         A database system is a repository that stores and manages data files and records. \\ 
         Generally there are two methods of keeping data records, file systems or databases. \\
         File systems store data records directly into files and reading, writing and updating data 
@@ -59,5 +49,65 @@
         that an student cannot take more than 20 credits in each semester, this makes the software more reliable and integrated. \\ 
         Sometimes two or more users want to access on data record at the same time. This is known as concurrent access. 
         Databases help developers with that too since they handle all these by themselves. \\ 
-        These features make databases the preferred method to store data rather than file systems.
+        These features make databases the preferred method to store data rather than file systems. \\
+
+    \section{What is a transaction?}
+
+        Transaction is defined as a set of consecutive operations, operations being SELECT, DELETE, UPDATE and so on.
+        Transactions are defined to be breaking-safe, Meaning if one of the operations fail, the transaction is not done and 
+        is reverted. For example; While you ask the bank to transfer some amount of money to another account, if 
+        any of the operations in the middle of this transaction fail, the transaction is reverted and your money doesn't get lost. \\ 
+        In other words, database transactions take place fully or not at all.
+        While a transaction is happening, changes to database are unstable meaning they are not finalized, but once the transaction is 
+        complete, the changes are committed and finalized. This feature is so helpful for reverting changes in case the transaction fails. 
+
+    \section{What are locks in a DBMS? Briefly explain them.}
+
+        Locks in DBMS are a method of ensuring data isolation in a transaction that requires mutually exclusive data access.
+        This means that by locking certain data in database, Access for that data while another transaction is performed is banned.
+        There are two types of lock. 
+        \begin{itemize}
+            \item Shared lock 
+            \item Exclusive lock
+        \end{itemize}
+        Shared lock let's other transactions to read data while another transaction is taking place, but writing is not allowed. 
+        In the other hand, exclusive lock allows neither reading nor writing operations on the locked data.
+    \section{What are ACID Properties? Explain Atomicity and Consistency.}
+
+        ACID stands for atomicity, consistency, isolation and durability. ACID properties are a set of features or principles that 
+        every transaction should have to ensure reliability of the transaction which maintains the database integrity. \\ 
+        Atomicity means that either all the operation in a transaction should take place successfully or not at all. This simply means,
+        if one of the operations within a transaction fails, the whole transaction is failed. There is no such thing as partially 
+        correct transaction. \\ 
+        Consistency means that after the transaction is committed and performed completely, all sources of data should have the latest data. 
+        For example, if a money transfer transaction is debited, both the sender and receiver of the money should have the results in their database. \\ 
+    \section{What is meaning of "data in database is integrated".}
+
+        This means that overall, data stored in the database is complete, consistent and correct. An integrated database is one 
+        that users can rely on the data which they get from. For example; if they query a data, they are sure that what the 
+        database returns to them is reliable and correct and they can use the data without performing additional manual checks themselves. \\ 
+    \section{What is logical data independence and why is it important?}
+    
+        In three-schema database design, logical data independence in defined as the independence between the conceptual level and 
+        external level of the database, meaning, changes in the conceptual level do not effect the external level of the database.
+        This is pretty important since it helps lower-cost maintenance since enhancing the logic inside database doesn't require 
+        changing the program using the database. Moreover, It helps security. \\
+    \section{Name the main steps in database design. Explain two of them.}
+
+        There are six steps in database design:
+        \begin{itemize}
+            \item Requirement analysis 
+            \item Conceptual design
+            \item logical design 
+            \item Schema refinement 
+            \item Physical design 
+            \item Application and security design
+        \end{itemize}
+
+        The first step in database design is requirement analysis which means thinking of what data is going to be stored in 
+        the database and what application is going to be built on top of the database and what it is going to do.
+        Also, performance requirements are considered in this step. \\ 
+        Conceptual design step is performed using the data gathered in the requirement analysis step to create a high-level 
+        description of the data to be stored in the database, as well as the constraints which this data should follow. \\
+        
 \end{document}
